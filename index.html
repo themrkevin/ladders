@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Ladders</title>
+	<link rel="stylesheet" href="stylesheets/normalize.css" />
+	<link rel="stylesheet" href="stylesheets/app.css" />
+	<link rel="stylesheet" href="stylesheets/style.css" />
+	<script src="javascripts/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+	<header id="header" class="row">
+		<div class="large-12 columns">
+			<h1>Ladders Web App</h1>
+		</div>
+	</header>
+
+	<div id="mid" class="row">
+		<div class="large-12 columns">
+		</div>
+	</div><!-- #mid -->
+
+	<section id="config" class="config row">
+		<div class="large-12 columns">
+			<h2>Ladder Configuration</h2>
+			<section id="player-list" class="player-list">
+				<h3>Total players: <span class="count">0</span></h3>
+				<ul>
+					<li class="template">
+						<p class="player-name">Player name</p>
+						<p class="remove-container"><a href="#" class="manager-link remove switch">Remove player</a></p>
+		            </li>
+				</ul>
+				<form name="player-config" class="player-config custom">
+					<fieldset>
+						<legend>Player Management</legend>
+						<label for="name">Add Players</label>
+						<div class="row collapse">
+							<div class="small-8 columns">							
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="small-4 columns">
+								<input type="submit" name="submit" value="Add Player" class="button success radius postfix" />
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</section>
+			<form name="event-config" class="event-config custom">
+				<fieldset>
+					<legend>Tournament Settings</legend>
+					<label for="event-name">Tournament Name</label>
+					<input type="text" name="event-name" placeholder="Name of the Event" />
+					<label for="event-type">Tournament Type</label>
+					<select name="event-type" class="medium">
+						<option value="none">Select Type</option>
+						<option value="Swiss">Swiss</option>
+		                <option value="Single Elimination">Single Elimination</option>
+		                <option value="Double Elimination">Double Elimination</option>
+		                <option value="Round Robin">Round Robin</option>
+					</select>
+					<label for="event-rounds">Number of Rounds</label>
+					<input type="text" name="event-rounds" placeholder="Number of Rounds" />
+					<input type="submit" name="submit" value="Update Settings" class="small button success radius" />
+				</fieldset>
+			</form>
+			<form name="reset-config" class="reset-config custom">
+				<input type="submit" name="submit" value="Reset Ladder" class="small button alert radius" />
+			</form>
+		</div>
+	</section><!-- #config -->
+
+	<!-- <script>
+	// 	document.write('<script src=' +
+	// 	('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery-2') +
+	// 	'.js><\/script>')
+	</script> -->
+	<script src="javascripts/vendor/jquery-2.js"></script>
+	<script src="javascripts/foundation/foundation.js"></script>
+	<script src="javascripts/foundation/foundation.alerts.js"></script>
+	<script src="javascripts/foundation/foundation.clearing.js"></script>
+	<script src="javascripts/foundation/foundation.cookie.js"></script>
+	<script src="javascripts/foundation/foundation.dropdown.js"></script>
+	<script src="javascripts/foundation/foundation.forms.js"></script>
+	<script src="javascripts/foundation/foundation.joyride.js"></script>
+	<script src="javascripts/foundation/foundation.magellan.js"></script>
+	<script src="javascripts/foundation/foundation.orbit.js"></script>
+	<script src="javascripts/foundation/foundation.placeholder.js"></script>
+	<script src="javascripts/foundation/foundation.reveal.js"></script>
+	<script src="javascripts/foundation/foundation.section.js"></script>
+	<script src="javascripts/foundation/foundation.tooltips.js"></script>
+	<script src="javascripts/foundation/foundation.topbar.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+	<script src="javascripts/ladders.js"></script>
+</body>
+</html>
