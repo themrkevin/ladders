@@ -1,10 +1,15 @@
-/*style.sass */
+/*	style.sass */
 @font-face {
   font-family: "SansitaOneRegular";
   src: url("../fonts/SansitaOne-webfont.eot");
   src: url("../fonts/SansitaOne-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/SansitaOne-webfont.woff") format("woff"), url("../fonts/SansitaOne-webfont.ttf") format("truetype"), url("../fonts/SansitaOne-webfont.svg#SansitaOneRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+body {
+  color: #333333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  background: url(../images/project_papper.png) repeat left top; }
 
 h1 {
   font-family: SansitaOneRegular;
@@ -29,3 +34,76 @@ h3 {
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   font-size: 26px;
   color: #ff6600; }
+
+p {
+  color: #333333;
+  margin: 0 0 20px; }
+
+.player-list {
+  border-radius: 4px;
+  color: #cccccc; }
+  .player-list p {
+    color: #cccccc; }
+  .player-list li {
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    list-style: none;
+    margin: 0 0 10px;
+    background: url(../images/names.png) #ff6600 repeat;
+    padding: 5px 0px 5px 10px; }
+    .player-list li p {
+      margin: 5px 0;
+      padding: 0; }
+    .player-list li .player-name {
+      color: white; }
+    .player-list li .remove-container a {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url(../images/plus-minus.jpg) no-repeat center -25px;
+      text-decoration: none;
+      height: 26px;
+      width: 26px;
+      border-radius: 26px;
+      border: 2px solid white;
+      color: white;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+      margin: 0 10px;
+      display: inline-block;
+      float: right; }
+
+.config {
+  border-radius: 4px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  color: #cccccc;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  background: url(../images/leather.png) repeat left top;
+  max-width: 300px;
+  padding: 0;
+  margin: 0 0 20px;
+  border-radius: 0 4px 4px 0;
+  color: #cccccc; }
+  .config form {
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #2d2d2d;
+    margin: 0;
+    padding: 20px 0 0; }
+  .config fieldset {
+    border: none;
+    padding: 0;
+    margin: 0; }
+    .config fieldset legend {
+      margin: 0 0 20px;
+      padding: 0;
+      background: none;
+      color: #cccccc; }
+    .config fieldset label {
+      color: #cccccc;
+      margin: 0 0 10px; }
+    .config fieldset input, .config fieldset .custom.dropdown {
+      border-radius: 4px;
+      text-shadow: none; }
+    .config fieldset .collapse input {
+      border-radius: 4px 0 0 4px; }
+    .config fieldset li:first-child {
+      text-shadow: none; }
