@@ -39,6 +39,32 @@ p {
   color: #333333;
   margin: 0 0 20px; }
 
+#header {
+  padding: 0 10px; }
+
+.ladder {
+  float: left;
+  padding: 10px; }
+  .ladder .rounds li {
+    list-style: none; }
+  .ladder .rounds .matches {
+    margin: 0;
+    padding: 0; }
+    .ladder .rounds .matches .match {
+      border-radius: 4px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+      color: #cccccc;
+      background: url(../images/leather.png) repeat left top;
+      padding: 10px;
+      text-align: center;
+      width: 200px;
+      max-width: 100%; }
+      .ladder .rounds .matches .match p {
+        color: #cccccc;
+        margin: 0; }
+    .ladder .rounds .matches li {
+      list-style: none; }
+
 .player-list {
   border-radius: 4px;
   color: #cccccc; }
@@ -79,10 +105,11 @@ p {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   background: url(../images/leather.png) repeat left top;
   max-width: 300px;
-  padding: 0;
+  padding: 10px;
   margin: 0 0 20px;
   border-radius: 0 4px 4px 0;
-  color: #cccccc; }
+  color: #cccccc;
+  float: left; }
   .config form {
     border-top: 2px solid #333333;
     border-bottom: 2px solid #2d2d2d;

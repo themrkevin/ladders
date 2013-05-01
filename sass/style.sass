@@ -73,10 +73,36 @@ p
 	color: $text
 	margin: 0 0 20px
 
+#header 
+	padding: 0 10px
+
+.ladder
+	float: left
+	padding: 10px
+	.rounds 
+		li
+			list-style: none
+		.matches
+			margin: 0
+			padding: 0 
+			.match
+				+corners
+				box-shadow: $box_shadow
+				color: $ltext
+				background: $bg_leather
+				padding: 10px
+				text-align: center
+				width: 200px
+				max-width: 100%
+				p
+					color: $ltext
+					margin: 0
+			li
+				list-style: none
+
 .player-list
 	+corners
 	color: $ltext
-
 	p
 		color: $ltext
 	li
@@ -85,7 +111,6 @@ p
 		margin: 0 0 10px
 		background: $bg_orange
 		padding: 5px 0px 5px 10px
-
 		p
 			margin: 5px 0
 			padding: 0
@@ -111,11 +136,11 @@ p
 	+light-fancy
 	background: $bg_leather
 	max-width: 300px
-	padding: 0
+	padding: 10px
 	margin: 0 0 20px
 	border-radius: 0 4px 4px 0
 	color: $ltext
-
+	float: left
 	form
 		border-top: 2px solid #333
 		border-bottom: 2px solid #2d2d2d
@@ -125,7 +150,6 @@ p
 		border: none
 		padding: 0
 		margin: 0
-
 		legend
 			margin: 0 0 20px
 			padding: 0
@@ -141,4 +165,3 @@ p
 			border-radius: 4px 0 0 4px
 		li:first-child
 			text-shadow: none
-

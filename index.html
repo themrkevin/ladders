@@ -13,19 +13,12 @@
 	<script src="javascripts/vendor/custom.modernizr.js"></script>
 </head>
 <body>
-	<header id="header" class="row">
-		<div class="large-12 columns">
-			<h1>Ladders Web App</h1>
-		</div>
+	<header id="header">
+		<h1>Ladders Web App</h1>
 	</header>
 
-	<div id="mid" class="row">
-		<div class="large-12 columns">
-		</div>
-	</div><!-- #mid -->
-
-	<section id="config" class="config row">
-		<div class="large-12 columns">
+	<div id="mid" class="open">
+		<section id="config" class="config">
 			<h2>Configuration</h2>
 			<form name="player-config" class="player-config custom">
 				<h3>Total players: <span class="count">0</span></h3>
@@ -68,8 +61,23 @@
 			<form name="reset-config" class="reset-config custom">
 				<input type="submit" name="submit" value="Reset Ladder" class="small button alert radius" />
 			</form>
-		</div>
-	</section><!-- #config -->
+		</section><!-- #config -->
+
+		<section id="ladder" class="ladder">
+			<ul class="rounds">
+				<li class="round-template template">
+					<h2 class="this-round">Round 0</h1>
+					<ul class="matches">
+						<li class="match match-0 match-template template">
+							<p class="player unassigned">Player</p>
+							<p class="versus">vs</p>
+							<p class="player unassigned">Player</p>
+						</li>
+					</ul>
+				</li>
+	        </ul>
+		</section><!-- #ladder -->
+	</div><!-- #mid -->
 
 	<!-- <script>
 	// 	document.write('<script src=' +
